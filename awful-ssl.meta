@@ -1,0 +1,8 @@
+;;; awful-ssl.meta -*- scheme -*-
+
+((egg "awful-ssl.egg")
+ (synopsis "SSL support for awful")
+ (author "<a href=\"http://wiki.call-cc.org/users/mario-domenech-goulart\">Mario Domenech Goulart</a>")
+ (license "BSD")
+ (category web)
+ (depends (awful "0.27") openssl spiffy))

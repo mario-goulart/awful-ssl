@@ -1,0 +1,8 @@
+;;; awful-ssl.setup -*- scheme -*-
+
+(compile -s -O2 -d1 -j awful-ssl awful-ssl.scm)
+(compile -s -O2 -d1 awful-ssl.import.scm)
+
+(install-extension 'awful-ssl
+                   '("awful-ssl.so" "awful-ssl.import.so")
+                   '((version 0.1)))
