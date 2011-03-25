@@ -5,4 +5,5 @@
  (author "<a href=\"http://wiki.call-cc.org/users/mario-domenech-goulart\">Mario Domenech Goulart</a>")
  (license "BSD")
  (category web)
- (depends (awful "0.28") (openssl "1.5.1") spiffy))
+ (depends (awful "0.28") (openssl "1.5.1") spiffy)
+ (files "awful-ssl.meta" "awful-ssl.scm" "awful-ssl.setup"))
