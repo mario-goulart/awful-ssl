@@ -2,7 +2,7 @@
 
 ((egg "awful-ssl.egg")
  (synopsis "SSL support for awful")
- (author "<a href=\"http://wiki.call-cc.org/users/mario-domenech-goulart\">Mario Domenech Goulart</a>")
+ (author "Mario Domenech Goulart")
  (license "BSD")
  (category web)
  (depends (awful "0.28") (openssl "1.6.1") (spiffy "4.14"))
