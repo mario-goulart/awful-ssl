@@ -1,0 +1,7 @@
+awful-ssl.build.sh
+awful-ssl.import.scm
+awful-ssl.import.so
+awful-ssl.install.sh
+awful-ssl.link
+awful-ssl.so
+awful-ssl.static.o
