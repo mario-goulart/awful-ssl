@@ -1,7 +1,16 @@
 (module awful-ssl (enable-ssl)
 
-(import chicken scheme)
-(use tcp openssl awful spiffy)
+(import scheme)
+(cond-expand
+  (chicken-4
+   (import chicken)
+   (use tcp openssl awful spiffy))
+  (chicken-5
+   (import (chicken base)
+           (chicken tcp))
+   (import awful openssl spiffy))
+  (else
+   (error "Unsupported CHICKEN version.")))
 
 (define (enable-ssl #!key certificate-file private-key-file)
   (awful-listen ssl-listen)

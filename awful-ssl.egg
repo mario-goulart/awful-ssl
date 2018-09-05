@@ -1,0 +1,11 @@
+;;; awful-ssl.egg -*- scheme -*-
+
+((synopsis "SSL support for awful")
+ (author "Mario Domenech Goulart")
+ (license "BSD")
+ (category web)
+ (dependencies awful openssl)
+ (component-options
+  (csc-options "-O3" "-d1"))
+ (components
+  (extension awful-ssl)))
